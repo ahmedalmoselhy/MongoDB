@@ -273,7 +273,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form1"
-        Me.Text = "Stocks App"
+        Me.Text = "تسوق الآن"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

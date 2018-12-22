@@ -117,7 +117,6 @@ Public Class Form1
         Button6.Enabled = False
         Button7.Enabled = False
         Button8.Enabled = True
-
     End Sub
     ' save edited record
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
