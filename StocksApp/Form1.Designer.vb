@@ -44,6 +44,7 @@ Partial Class Form1
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button9 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,11 +92,12 @@ Partial Class Form1
         Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.DataGridView1.RowTemplate.Height = 120
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(393, 512)
+        Me.DataGridView1.Size = New System.Drawing.Size(393, 423)
         Me.DataGridView1.TabIndex = 1
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
@@ -105,7 +107,6 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox1.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(411, 48)
         Me.GroupBox1.Name = "GroupBox1"
@@ -267,11 +268,11 @@ Partial Class Form1
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Location = New System.Drawing.Point(654, 537)
+        Me.Button4.Location = New System.Drawing.Point(854, 0)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(220, 30)
+        Me.Button4.Size = New System.Drawing.Size(32, 30)
         Me.Button4.TabIndex = 3
-        Me.Button4.Text = "EXIT"
+        Me.Button4.Text = "X"
         Me.Button4.UseVisualStyleBackColor = False
         '
         'Button6
@@ -280,7 +281,7 @@ Partial Class Form1
         Me.Button6.FlatAppearance.BorderSize = 0
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(411, 537)
+        Me.Button6.Location = New System.Drawing.Point(411, 448)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(220, 30)
         Me.Button6.TabIndex = 4
@@ -298,13 +299,28 @@ Partial Class Form1
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Somethings Store"
         '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.Button9.Location = New System.Drawing.Point(819, 0)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(35, 30)
+        Me.Button9.TabIndex = 7
+        Me.Button9.Text = "ــــ"
+        Me.Button9.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(886, 579)
+        Me.ClientSize = New System.Drawing.Size(886, 492)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button6)
@@ -343,4 +359,5 @@ Partial Class Form1
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Label4 As Label
+    Friend WithEvents Button9 As Button
 End Class

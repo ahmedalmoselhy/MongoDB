@@ -165,4 +165,16 @@ Public Class Form1
             temp = Nothing
         End If
     End Sub
+    ' minimize the form
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+    Private Sub Form1_Deactivate(sender As Object, e As EventArgs) Handles Me.Deactivate
+        Button4.BackColor = Color.WhiteSmoke
+        Button4.ForeColor = Color.Black
+    End Sub
+    Private Sub Form1_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        Button4.BackColor = Color.Red
+        Button4.ForeColor = Color.White
+    End Sub
 End Class
