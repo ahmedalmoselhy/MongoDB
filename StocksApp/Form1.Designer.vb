@@ -35,10 +35,10 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -75,7 +75,7 @@ Partial Class Form1
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 55)
         Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
         DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
@@ -90,7 +90,7 @@ Partial Class Form1
         Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.DataGridView1.RowTemplate.Height = 120
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(421, 468)
+        Me.DataGridView1.Size = New System.Drawing.Size(393, 512)
         Me.DataGridView1.TabIndex = 1
         '
         'GroupBox1
@@ -102,42 +102,49 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox1.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(439, 29)
+        Me.GroupBox1.Location = New System.Drawing.Point(411, 29)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(422, 343)
+        Me.GroupBox1.Size = New System.Drawing.Size(450, 377)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         '
         'Button5
         '
-        Me.Button5.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(317, 26)
+        Me.Button5.BackColor = System.Drawing.Color.MediumSpringGreen
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Location = New System.Drawing.Point(347, 26)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(95, 30)
         Me.Button5.TabIndex = 3
-        Me.Button5.Text = "بحث"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.Text = "Search"
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(317, 96)
+        Me.Button1.BackColor = System.Drawing.Color.MediumSpringGreen
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(347, 96)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(95, 30)
+        Me.Button1.Size = New System.Drawing.Size(95, 50)
         Me.Button1.TabIndex = 6
-        Me.Button1.Text = "اختر الصورة"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Text = "Choose Image"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = Global.StocksApp.My.Resources.Resources._Default
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.InitialImage = Nothing
-        Me.PictureBox1.Location = New System.Drawing.Point(106, 96)
+        Me.PictureBox1.Location = New System.Drawing.Point(136, 96)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(200, 200)
         Me.PictureBox1.TabIndex = 5
@@ -145,92 +152,108 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(106, 61)
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(136, 64)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(200, 21)
+        Me.TextBox2.Size = New System.Drawing.Size(200, 20)
         Me.TextBox2.TabIndex = 4
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(106, 28)
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(136, 31)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 21)
+        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
         Me.TextBox1.TabIndex = 4
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(17, 96)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(30, 13)
+        Me.Label3.Size = New System.Drawing.Size(48, 16)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "صورة"
+        Me.Label3.Text = "Image"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(17, 64)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(94, 16)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "نوع المنتج"
+        Me.Label2.Text = "Product Type"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.MediumTurquoise
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(136, 341)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(200, 30)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Insert A New Product"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(17, 31)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 13)
+        Me.Label1.Size = New System.Drawing.Size(112, 16)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "رقم المنتج"
+        Me.Label1.Text = "Product Number"
         '
         'Button8
         '
+        Me.Button8.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button8.Enabled = False
-        Me.Button8.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(654, 414)
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(654, 448)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(220, 30)
         Me.Button8.TabIndex = 5
-        Me.Button8.Text = "حفظ المنتج"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Button8.Text = "Save Edited Product"
+        Me.Button8.UseVisualStyleBackColor = False
         '
         'Button7
         '
-        Me.Button7.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(654, 378)
+        Me.Button7.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(654, 412)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(220, 30)
         Me.Button7.TabIndex = 5
-        Me.Button7.Text = "تعديل"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(439, 450)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(209, 30)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "إضافة منتج جديد"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button7.Text = "Edit Product"
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'Button3
         '
-        Me.Button3.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(439, 414)
+        Me.Button3.BackColor = System.Drawing.Color.PaleGreen
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(411, 412)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(209, 30)
+        Me.Button3.Size = New System.Drawing.Size(220, 30)
         Me.Button3.TabIndex = 3
-        Me.Button3.Text = "عرض الكل"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.Text = "Display All Products"
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'OpenFileDialog1
         '
@@ -238,30 +261,37 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(654, 450)
+        Me.Button4.BackColor = System.Drawing.Color.Red
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button4.Location = New System.Drawing.Point(654, 537)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(220, 30)
         Me.Button4.TabIndex = 3
-        Me.Button4.Text = "خروج"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.Text = "EXIT"
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button6
         '
-        Me.Button6.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(439, 378)
+        Me.Button6.BackColor = System.Drawing.Color.IndianRed
+        Me.Button6.FlatAppearance.BorderSize = 0
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(411, 537)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(209, 30)
+        Me.Button6.Size = New System.Drawing.Size(220, 30)
         Me.Button6.TabIndex = 4
-        Me.Button6.Text = "إزالة المنتج"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.Text = "Remove Product"
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(886, 501)
+        Me.ClientSize = New System.Drawing.Size(886, 579)
         Me.ControlBox = False
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button6)
@@ -270,9 +300,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button2)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "تسوق الآن"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
